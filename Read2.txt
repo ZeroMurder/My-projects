@@ -1,0 +1,8 @@
+this is a disk image, or rather the files for creating the image, namely kernel.asm and bootloader.asm . 
+Well, that's it. To create a Vdi file, you need to enter the command + into CMD cd and the folder itself, 
+or rather the path to it, and then after hastily entering the folder into CMD, you need to write this code oh, 
+I almost forgot, you also need to go after meeting with the img file, you need to go to the qemu directory this directory is the same as when navigating the CMD path. 
+if we paste the path to the installed qemu, namely to the folder, then later we transfer the img file to qemu and convert it to a VDI file there. Later, 
+after a successful build, we install the vdi file into a virtual machine. An example would be Virtual box. In the pictures provided to the instructions, 
+you can see how to install everything correctly. the commands are not working yet, but he can, when pressing the right ctrl + x, descend to the bottom line :), when pressing the left ctrl + del (Delete), 
+deletes everything and moves to the original line.

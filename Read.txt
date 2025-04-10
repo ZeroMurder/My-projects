@@ -1,0 +1,21 @@
+this is a disk image, or rather the files for creating the image, 
+namely kernel.asm and bootloader.asm .
+ Well, that's it. To create a Vdi file, you need to enter the + command in CMD cd and the folder itself,
+  or rather the path to it, and then after hastily entering the folder on CMD, 
+  you need to write this code oh, I almost forgot,
+   you also need to go after the img file meeting, you need to go to the qemu directory, 
+   the directory is the same as navigating the path to CMD. if we insert the path to the installed qemu ,
+    namely the folder , later we transfer the img file to qemu and there we already convert it to a VDI file, later after successful assembly - REM Build bootloader.asm
+nasm -f bin bootloader.asm -o bootloader.bin
+
+REM Build kernel.asm
+nasm -f bin kernel.asm -o kernel.bin
+
+REM Combining files into a single disk image
+copy /b bootloader.bin + kernel.bin disk.img
+
+REM Conversion to VDI using qemu-img
+qemu-img convert -O vdi disk.img os.vdi
+
+REM Running a disk image in QEMU
+qemu
