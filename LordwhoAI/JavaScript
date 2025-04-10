@@ -1,0 +1,20 @@
+async function handleSubmit() {
+    const question = elements.userInput.value.trim();
+    if(!question) return;
+
+    try {
+        const response = await fetch('http://localhost:3000/api/openai', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ question })
+        });
+
+        const data = await response.json();
+        elements.responseArea.innerHTML = data.answer;
+    } catch (error) {
+        console.error('Ошибка:', error);
+        elements.responseArea.innerHTML = 'Ошибка при обработке запроса.';
+    }
+}
