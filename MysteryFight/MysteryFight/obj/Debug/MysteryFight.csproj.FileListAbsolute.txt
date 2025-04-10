@@ -1,0 +1,5 @@
+C:\Users\Vladimir\source\repos\MysteryFight\MysteryFight\obj\Debug\MysteryFight.csproj.AssemblyReference.cache
+C:\Users\Vladimir\source\repos\MysteryFight\MysteryFight\obj\Debug\MysteryFight.Form1.resources
+C:\Users\Vladimir\source\repos\MysteryFight\MysteryFight\obj\Debug\MysteryFight.Properties.Resources.resources
+C:\Users\Vladimir\source\repos\MysteryFight\MysteryFight\obj\Debug\MysteryFight.csproj.GenerateResource.cache
+C:\Users\Vladimir\source\repos\MysteryFight\MysteryFight\obj\Debug\MysteryFight.csproj.CoreCompileInputs.cache
